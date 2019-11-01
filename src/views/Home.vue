@@ -22,7 +22,8 @@ export default {
       pathList: [
         { pathname: "index", path: "/index" },
         { pathname: "list", path: "/list" },
-        { pathname: "login", path: "/login" }
+        { pathname: "login", path: "/login" },
+        { pathname: "testv", path: "/testv" },
       ]
     };
   },
@@ -30,7 +31,8 @@ export default {
     // this.$eventBus.$on("testEvent", res => {
     //   console.log(res);
     // });
-    console.log(this.$route);
+    // console.log(this.$route);
+    this.$store.dispatch("getTestData");
   },
   computed: {
     testRoute() {

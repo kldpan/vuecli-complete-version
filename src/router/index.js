@@ -42,6 +42,14 @@ const routes = [
         meta: {
           title: "登陆页"
         }
+      },
+      {
+        path: "testv",
+        name:"testv",
+        component: () => import("@/components/testv.vue"),
+        meta: {
+          title: "Vuex测试"
+        }
       }
     ]
   }
